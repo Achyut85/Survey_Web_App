@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.input {
+    @apply focus:bg-slate-200 hover:bg-slate-200 px-2 py-1  rounded-md placeholder-slate-600 outline-none font-sans transition-colors bg-slate-50
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.5s forwards ;
+     animation: animatezoom 0.5s forwards 
+     
+  }
+.animate-drop {
+  animation: animateDrop 0.5s forwards 
+}  
+  @-webkit-keyframes animatezoom {
+    from {
+      
+      -webkit-transform: scale(0)
+    }
+    to {
+   
+      -webkit-transform: scale(1)
+    }
+  }
+
+@keyframes animatezoom {
+    from {
+
+      transform: scale(0.1);
+    }
+    to {
+      transform: scale(1);
+     
+    }
+  }
+
+  @keyframes animateDrop {
+    from {
+
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+     
+    }
+  }
+  
